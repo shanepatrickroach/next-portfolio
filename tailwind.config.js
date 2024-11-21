@@ -6,6 +6,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
     extend: {
       colors: {
         background: "var(--background)",
@@ -13,5 +14,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+
+  daisyui: {
+    themes: ["light", "dark", "cupcake","forest","night"],
+  }
 };
